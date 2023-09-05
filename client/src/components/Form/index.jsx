@@ -73,7 +73,7 @@ const inputs = [
 ];
 
 function Form() {
-  const [formType, setFormType] = useState("register");
+  const [formType, setFormType] = useState("login");
   const { palette } = useTheme();
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -97,8 +97,12 @@ function Form() {
       }
     } else {
       try {
-        await register(values, onSubmitProps);
-        setFormType("login");
+        // await register(values, onSubmitProps);
+        alert(
+          "This is a mock application. Registration is prohibited, so please login using:\n\nEmail:" +
+            " fake@email.com\nPassword: fake@email.com",
+        );
+        // setFormType("login");
       } catch (err) {
         console.error(err);
       }
