@@ -1,0 +1,19 @@
+.logo {
+  max-height: 30px;
+}
+
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+
+  &:hover {
+    opacity: 0.5;
+    cursor: pointer;
+  }
+}
+
+.navbar_icon {
+  font-size: 25px !important;
+}
