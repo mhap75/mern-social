@@ -15,22 +15,4 @@ export const login = async (values, {resetForm}) => {
         });
 };
 
-// export const register = async (values, { resetForm }) => {
-//   const formData = new FormData();
-//   for (const value in values) {
-//     formData.append(value, values[value]);
-//   }
-//   formData.append("picturePath", values.picture.name);
-//
-//   return await fetch(`${serverUrl}/auth/register`, {
-//     method: "POST",
-//     body: formData,
-//   })
-//     .then((res) => {
-//       resetForm();
-//       return res.json();
-//     })
-//     .catch((err) => {
-//       return err.json();
-//     });
-// };
+
