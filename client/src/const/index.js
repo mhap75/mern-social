@@ -7,4 +7,4 @@ import {
 export const serverUrl =
   process.env.NODE_ENV === "production"
     ? process.env.SERVER_URL
-    : "http://localhost:3001";
+    : "https://mockchat-backend.onrender.com";
